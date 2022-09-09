@@ -35,9 +35,9 @@ li {
 }
 
 .weather-icon {
-    height: 64px;
-    width: 64px;
-    margin-right: 10px;
+    height: 70px;
+    width: 70px;
+   
 }
 
 .temperature {
@@ -69,24 +69,6 @@ li {
     color: black;
 }
 
-.images {
-    display: block;
-    margin: 0 auto;
-}
-
-.sunny {
-    width: 64px;
-    height: 64px;
-}
-
-.rainy {
-    width: 64px;
-    height: 64px;
-}
-
-.min {
-    color: #494545;
-}
 
 .far {
     color: #505152;
@@ -99,7 +81,7 @@ li {
 
 .weather-forecast {
     text-align: center;
-    margin-top: 20px auto;
+    margin-top: 25px;
     color: #000;
 }
 
@@ -112,4 +94,7 @@ li {
 }
 .description {
     text-transform: capitalize;
+}
+.float-left{
+    float: left;
 }
