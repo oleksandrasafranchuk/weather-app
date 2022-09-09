@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Weather App</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+    <link rel="stylesheet" href="src/style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="weather-app">
+<form class="search-form" id="search-form">
+    <div class="row">
+        <div class="col-6">
+            <input type="search" placeholder="Type a city.." autofocus="on" autocomplete="off" id="city-input"
+                class="form-control shadow-sm" />
+        </div>
+        <div class="col-3">
+            <input type="submit" value="Search" class="form-control btn btn-secondary shadow-sm" />
+        </div>
+        <div class="col-3">
+            <button class="btn btn-light w-100" id="current-location-button">
+                Current
+            </button>
+        </div>
+    </div>
+</form>            <div class="overview">
+                <h1 id="city"></h1>
+                <ul>
+                    <li>Last updated: <span id="date"></span></li>
+                    <li id="description" class="description"></li>
+                </ul>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <img src="" alt="Mostly sunny" id="icon" class="current-temperature-icon" />
+                    <strong class="temperature" id="temperature">19</strong>
+                    <span class="units">
+                        <a href="#" id="celsius-link" class="far">°C</a>|
+                        <a href="#" id="fahrenheit-link" class="far"> °F </a>
+                    </span>
+                </div>
+                <div class="col-6">
+                    <ul>
+                        <li>Humidity: <span id="humidity"></span> %</li>
+                        <li>Wind: <span id="wind"></span> m/h</li>
+                    </ul>
+                </div>
+                <div class="weather-forecast" id="weather-forecast"></div>
+            </div>
+        </div>
+        <div class="gitHub">
+            <a href="https://github.com/oleksandrasafranchuk/weatherapp" class="link">Open-source code,</a>
+            by Oleksandra Safranchuk
+        </div>
+
+    <script src="src/script.js"></script>
+</body>
+
+</html>
